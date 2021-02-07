@@ -1,2 +1,62 @@
-<h1>StaticPages#login</h1>
-<p>Find me in app/views/static_pages/login.html.erb</p>
+<%# ナビゲーションバー %>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">サービス名</a>
+    <%# ナビゲーションバーのサイズ変更時にハンバーガーメニューを表示 %>
+    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">JP</a></li>
+      <li><a href="#">EN</a></li>
+      <li><a href="#">ログイン</a></li>
+      <li><a href="#">新規登録</a></li>
+    </ul>
+  </div>
+</nav>
+<%# ハンバーガーメニューをクリックすることで、サイドナビゲーションを表示 %>
+<ul class="sidenav" id="mobile-nav">
+  <li><a href="#">ログイン</a></li>
+  <li><a href="#">新規登録</a></li>
+</ul>
+<%# 本文 %>
+<div class="container">
+  <%# sectionで囲った要素をひとまとまりにし、中央寄せにする %>
+  <div class="section center-align">
+    <%# div以下を一つの列とみなし、垂直方向に中央揃えにする %>
+    <div class="row valign-wrapper">
+      <div class="col s12">
+        <%# 1/3を画像の範囲にする %>
+        <div class="col s4">
+          <%# (画像は後で差し替える) ブラウザサイズに応じて画像サイズ変更 %>
+          <img src="/assets/test_image.jpeg" alt="" class="responsive-img valign">
+        </div>
+        <%# 2/3を文章の範囲にする ブラウザサイズに応じて本文のサイズを変更 %>
+        <div class="col s8 flow-text">
+          <h1>日本語学習者と話そう</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%# 水平線 %>
+  <div class="divider"></div>
+  <div class="section center-align">
+    <h1>概要説明</h1>
+  </div>
+  <%# 水平線 %>
+  <div class="divider"></div>
+  <div class="section center-align">
+    <div class="row">
+      <div class="col s4">
+        <a href="#">画像</a>
+        <p>機能説明</p>
+      </div>
+      <div class="col s4">
+        <a href="#">画像</a>
+        <p>機能説明</p>
+      </div>
+      <div class="col s4">
+        <a href="#">画像</a>
+        <p>機能説明</p>
+      </div>
+    </div>
+  </div>
+</div>
