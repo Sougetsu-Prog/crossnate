@@ -1,4 +1,4 @@
 class StaticPagesController < ApplicationController
-  def login
+  def about
   end
 end
